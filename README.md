@@ -15,6 +15,8 @@ Published as
 ## publish
 
     brew install jq
+    git submodule update --init
 
     vagrant package
-    ./publish.sh TOKEN matti lambda TODO.TODO.TODO
+
+    atlas-publish/publish.sh TOKEN matti lambda TODO.TODO.TODO
