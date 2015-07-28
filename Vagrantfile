@@ -9,8 +9,5 @@ Vagrant.configure(2) do |config|
     vbox.cpus = cpus
   end
 
-  # https://github.com/mitchellh/vagrant/issues/5186#issuecomment-125538877
-  config.ssh.insert_key = false
-
   config.vm.provision :shell, path: "bootstrap.sh"
 end
